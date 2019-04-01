@@ -1,0 +1,592 @@
+/* Tamming box model with reset */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Universal rules */
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+
+
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color:#444444;
+
+}
+
+p {
+  font-size: 0.8rem;
+  color:#949394;
+}
+
+span {
+  font-size: 0.8rem;
+  color: #949394;
+}
+
+h3 {
+  color:#444444;
+
+}
+li {
+  color: #949394;
+}
+
+/* Header and navigation */
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  align-items: center;
+  align-content: center;
+  padding: 1rem 0;
+}
+
+.colmar {
+  color: #444444;
+  font-size: 1.5rem;
+}
+
+.academy {
+  color: #949394;
+  font-size: 1.5rem;
+}
+
+.logo img {
+  height: 2rem;
+  padding-left: 1.5rem;
+
+}
+
+.logo li {
+  display: inline;
+  padding: 2rem 1rem;
+}
+.logo span {
+font-family: roboto serif;
+height: 2rem;
+text-align: center;
+
+}
+
+  .mobilenav {
+  display: none;
+}
+
+@media only screen and (max-width:667px) {
+  .desktop {
+    display: none;
+  }
+ .mobilenav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.logo .image {
+  display: none;
+}
+
+}
+
+/* Main Container */
+
+.MainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1920px;
+}
+
+
+.content {
+  display: flex;
+  max-width: 1920px;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+/* Start Here */
+
+.StartHere {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#D4D4D4;
+}
+
+.StartHere img {
+  padding: 2rem 1.5rem;
+  width: 60%;
+
+}
+.StartHere .description {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+flex-direction: column;
+
+}
+.StartHere p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.button {
+  display: block;
+  background-color: #444444;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  width: 50%;
+  color: white;
+}
+
+.mobilebanner {
+  display: none;
+}
+
+@media only screen and (max-width:667px) {
+
+.StartHere .description {
+  display: none;
+
+}
+.StartHere img {
+  width: 100%;
+}
+.mobilebanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.mobilebanner h1 {
+  padding-bottom: 2rem;
+}
+.mobilebanner p {
+  padding-bottom: 1.5rem;
+
+}
+
+.mobilebanner .button {
+  display: block;
+  background-color: #444444;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  width: 50%;
+  color: white;
+}
+
+}
+
+/* Keep practicing */
+
+.practicing {
+  width: 60%;
+  margin-right: 1.5rem;
+}
+
+.practicing img {
+  padding: 2rem 1.5rem;
+  width: 60%;
+  margin-left: 1.5rem;
+
+
+}
+.practicing .description {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 1.5rem;
+}
+.practicing h1 {
+ padding-top: 2rem;
+ padding-bottom: 1.5rem;
+}
+
+/* Details */
+
+.details img {
+  width: 35%;
+  height: auto;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.details {
+  border-left: 2px solid #D4D4D4;
+}
+
+.details .orientation {
+  display: flex;
+  align-items: center;
+}
+.orientation .description {
+  padding-left: 1.5rem;
+}
+.orientation span {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.details .campus {
+  display: flex;
+  align-items: center;
+}
+.campus .description {
+  padding-left: 1.5rem;
+}
+.campus span {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.details .lecture {
+  display: flex;
+  align-items: center;
+  background-color: #D4D4D4;
+}
+.lecture .description {
+  padding-left: 1.5rem;
+}
+.lecture span {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.description span {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.ReadMore {
+  color: #3C93F4;
+}
+
+.mobiledetails {
+  display: none;
+}
+
+@media only screen and (max-width: 667px){
+
+.details {
+  display: none;
+}
+
+.practicing {
+  display: none;
+}
+
+.mobiledetails {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    .mobile-orientation {
+    padding-top: 1rem;
+    padding-left: 1rem;
+
+  }
+  .mobile-campus {
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .mobile-lecture {
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .mobiledetails img {
+    width:100%;
+    height: auto;
+  }
+
+}
+
+/* Courses */
+
+.courseload {
+  display: flex;
+  flex-flow: wrap;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+}
+
+.courses {
+  background-color: #D4D4D4;
+}
+
+.courses h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+}
+
+.software {
+  display: block;
+  background-color: white;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  height: auto;
+  width: 30%;
+}
+.software img {
+  width: 100%;
+  height: auto;
+}
+.art {
+display: block;
+background-color: white;
+margin-right: 2rem;
+margin-bottom: 2rem;
+height: auto;
+width: 30%;
+}
+.art img {
+  width: 100%;
+  height: auto;
+}
+
+.design {
+  display: block;
+  background-color: white;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  height: auto;
+  width: 30%;
+}
+
+.design img {
+  width: 100%;
+  height: auto;
+}
+
+.data {
+  display: block;
+  background-color: white;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  width: 30%;
+  height: auto;
+}
+
+.data img {
+  width: 100%;
+  height: auto;
+}
+
+.business {
+  display: block;
+  background-color: white;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  width: 30%;
+  height: auto;
+}
+
+.business img {
+  width: 100%;
+  height: auto;
+}
+
+.marketing {
+  display: block;
+  background-color: white;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  width: 30%;
+  height: auto;
+}
+
+.marketing img {
+  width: 100%;
+  height: auto;
+}
+.mobilecourses {
+  display: none;
+}
+
+@media only screen and (max-width:667px) {
+.courseload {
+  display: none;
+}
+
+.courses {
+  display: none;
+}
+.mobilecourses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 8rem;
+  margin-bottom: 2rem;
+
+}
+.mobilecourses h1 {
+
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.mobilecourses .button {
+  display: block;
+  background-color: #D4D4D4;
+  width: 100%;
+  color: gray;
+}
+
+.mobilecourses p {
+  width: 100%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+}
+
+
+
+
+/* Thesis */
+
+.thesis {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+.thesis h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: 25rem;
+}
+
+.aside {
+  width: 40%;
+  float: right;
+}
+
+.video {
+  margin-right:1.5rem;
+  margin-left: 1.5rem;
+  color: black;
+}
+video {
+  width: 60%;
+  padding-bottom: 1.5rem;
+}
+.video-text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 58.5rem;
+  margin-left: 1.5rem;
+}
+
+.video-text .description {
+  width: 60%;
+}
+.info img {
+  width: 35%;
+  height: auto;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.info {
+  border-left: 2px solid #D4D4D4;
+}
+
+.info .fisma {
+  display: flex;
+  align-items: center;
+  background-color:#D4D4D4;
+}
+.fisma .description {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1.5rem;
+}
+.fisma span {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.info .NowThen {
+  display: flex;
+  align-items: center;
+}
+.NowThen .description {
+
+  padding-left: 1.5rem;
+}
+.NowThen span {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.mobilethesis {
+  display: none;
+}
+
+@media only screen and (max-width:667px){
+  .aside {
+  display: none;}
+
+.video-text .description {
+  display: none;
+}
+
+.video {
+  display: none;
+}
+
+.thesis h1 {
+  display: none;
+}
+
+.mobilethesis {
+display: block;
+width: 100%;
+padding-left: 4.5rem;
+padding-top: 2rem;
+padding-bottom: 1rem;
+}
+
+.mobilethesis h1 {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+
+
+}
+
+footer span {
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+footer p {
+  float: right;
+}
